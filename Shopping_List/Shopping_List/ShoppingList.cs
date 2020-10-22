@@ -12,8 +12,8 @@ namespace Shopping_List
         public string ListName;
         public DateTime DateList;
 
-        public Breed[] breed { get; set; } //הגדרנו מערך
-        public Milk[] milk { get; set; } //הגדרנו מערך
+        public Breed[] breedArr; //הגדרנו מערך
+        public Milk[] milkArr; //הגדרנו מערך
 
         public ShoppingList(string listName, DateTime dateList)
         {
@@ -23,13 +23,10 @@ namespace Shopping_List
 
         public ShoppingList(int numOfBreed, int numOfMilk)
         {
-
-            for (int i = 0; i < numOfBreed; i++)
-            {
-                ShoppingList.Breed[i] = new Breed();
-            }
-           
-
+            breedArr = new Breed[numOfBreed];
+            milkArr = new Milk[numOfMilk];
         }
+
+      
     }
 }

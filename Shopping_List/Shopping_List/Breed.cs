@@ -56,7 +56,7 @@ namespace Shopping_List
 
     public void Printbreed()
     {
-        Console.WriteLine("the color of the bred is : ");
+        Console.WriteLine("the color of the bred is : "+Color);
         
     }
 

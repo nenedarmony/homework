@@ -32,28 +32,40 @@ namespace Shopping_List
 
         public Milk() => howMuchMilk++;
 
-        public Milk(string company, DateTime expirationDate, DateTime dxpirationDate)
+        public Milk(string company,DateTime dxpirationDate)
         {
             Company = company;
-            this.expirationDate = expirationDate;
             DxpirationDate = dxpirationDate;
         }
         public Milk(Milk milk)
         {
            
             Company = milk.Company;
-            expirationDate = milk.expirationDate;
             DxpirationDate = milk.DxpirationDate;
         }
 
         #endregion
-    
+
         #region function
 
-        public void Printbreed()
+        public void printMilk()
         {
-            Console.WriteLine("the company of the milk:" + Company + "price is:"+ price);
+            Console.WriteLine("Company:" + Company);
+            Console.WriteLine("expirationDate:" + expirationDate);
+            Console.WriteLine("price:" + price);
+
+
         }
+        public void GetMilkFromUser()
+        {
+            Console.WriteLine(" enter Company:");
+            Company = Console.ReadLine();
+            Console.WriteLine(" enter price:");
+            price = int.Parse(Console.ReadLine());
+            Console.WriteLine(" enter expirationDate:");
+            expirationDate = DateTime.Parse(Console.ReadLine());
+        }
+
 
         #endregion
 

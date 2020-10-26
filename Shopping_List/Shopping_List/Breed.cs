@@ -53,11 +53,24 @@ namespace Shopping_List
 
         #region function
 
-        public void Printbreed()
+        public void printBreed()
         {
-            Console.WriteLine("the color of the bred is : " + Color + "is price is" + price);
+            Console.WriteLine("IsTherFiler:" + IsTherFiler);
+            Console.WriteLine("Color:" + Color);
+            Console.WriteLine("price:" + price);
+           
 
         }
+        public void GetBreedFromUser()
+        {
+            Console.WriteLine(" enter price:");
+            price = int.Parse(Console.ReadLine());
+            Console.WriteLine(" enter Color:");
+            Color = Console.ReadLine();
+            Console.WriteLine(" enter IsTherFiler:");
+            IsTherFiler = bool.Parse(Console.ReadLine());
+        }
+
 
         #endregion
     }

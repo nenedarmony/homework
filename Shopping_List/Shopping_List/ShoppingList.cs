@@ -18,9 +18,14 @@ namespace Shopping_List
         public Milk[] milkArr { get; set; }  //הגדרנו מערך
 
         #region constractor
-        public ShoppingList()
+        public ShoppingList(ShoppingList s)
         {
-            
+            ListName = s.ListName;
+            DateList = s.DateList;
+
+            breedArr =  new Breed(breedArr);
+
+
         }
 
         public ShoppingList(int numOfBreed, int numOfMilk)
@@ -45,6 +50,8 @@ namespace Shopping_List
             Console.WriteLine(new String((bh+" list name:"+ListName+", date: "+DateList).Reverse().ToArray()));
             Console.WriteLine();
         }
+
+
         #endregion
     }
 }

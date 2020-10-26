@@ -40,10 +40,19 @@ namespace Shopping_List
         }
         public Milk(Milk milk)
         {
-            milk = new Milk();
+           
             Company = milk.Company;
-            this.expirationDate = milk.expirationDate;
+            expirationDate = milk.expirationDate;
             DxpirationDate = milk.DxpirationDate;
+        }
+
+        #endregion
+    
+        #region function
+
+        public void Printbreed()
+        {
+            Console.WriteLine("the company of the milk:" + Company + "price is:"+ price);
         }
 
         #endregion

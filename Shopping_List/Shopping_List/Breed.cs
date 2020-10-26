@@ -43,24 +43,26 @@ namespace Shopping_List
 
           public Breed(Breed bread ):this()//העתקה עמוקה 
            { 
-            bread= new Breed();
+            
             IsTherFiler = bread.IsTherFiler;
             Color = bread.Color;
             Price = bread.price;
-            }
+         
+        }
+        #endregion
+
+        #region function
+
+        public void Printbreed()
+        {
+            Console.WriteLine("the color of the bred is : " + Color + "is price is" + price);
+
         }
 
-      #endregion
-
-    #region function
-
-    public void Printbreed()
-    {
-        Console.WriteLine("the color of the bred is : "+Color);
-        
+        #endregion
     }
 
-    #endregion
-    }
+
+}
 
 

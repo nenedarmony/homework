@@ -10,8 +10,11 @@ namespace Shopping_List
     {
         static void Main(string[] args)
         {
-            ShoppingList sl1 = new ShoppingList();
-        
+            
+            ShoppingList list1 = new ShoppingList("list1", new DateTime(2001, 02, 22),Breed();
+
+
+            Console.ReadLine();
         }
     }
 }

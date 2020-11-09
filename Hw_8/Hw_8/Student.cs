@@ -11,6 +11,8 @@ namespace Hw_8
         public string Subject { get; set; }
         public double Avg { get; set; }
 
+        //cunstractor
+
         public Student():base()
         {
 
@@ -21,6 +23,8 @@ namespace Hw_8
             Subject = subject;
             Avg = avg;
         }
+
+        //function
 
         public override void PrintDetails()
         {
@@ -33,8 +37,9 @@ namespace Hw_8
             Console.WriteLine("avg:" + this.Avg);
         }
 
-        public new  void GetDetails()
+        public override  void GetDetails()
         {
+            //base.GetDetails();
             Console.WriteLine(" enter Subject:");
             Subject = Console.ReadLine();
             Console.WriteLine(" enter avg:");

@@ -28,9 +28,10 @@ namespace Hw_8
             BirthDate = birthDate;
         }
 
-      public  abstract void PrintDetails();
-        public  void GetDetails()
-        {
+        public  abstract void PrintDetails();
+
+        public virtual void GetDetails()
+          {
             Console.WriteLine(" enter name:" );
             Name = Console.ReadLine();
             Console.WriteLine(" enter phoneNumber:" );

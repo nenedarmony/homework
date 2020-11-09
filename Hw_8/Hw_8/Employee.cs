@@ -13,6 +13,8 @@ namespace Hw_8
         public int SumOfHourInWeak { get; set; }
         public int Salary { get; set; }
 
+        //cunstractor
+
         public Employee():base()
         {
 
@@ -25,15 +27,35 @@ namespace Hw_8
             SalaryParHour = salaryParHour;
             SumOfHourInWeak = sumOfHourInWeak;
             Salary = salary;
-        }
+         
+    }
+
+        //function 
 
         public override void PrintDetails()
         {
+            
             Console.WriteLine("name:" + this.Name);
             Console.WriteLine("phoneNumber:" + this.PhoneNumber);
             Console.WriteLine("id:" + this.Id);
             Console.WriteLine("adress:" + this.Adress);
             Console.WriteLine("birthDate:" + this.BirthDate);
         }
+
+        public override void GetDetails()
+        {
+           // base.GetDetails();
+            Console.WriteLine(" enter DateStartWork:");
+            DateStartWork = DateTime.Parse( Console.ReadLine());
+            Console.WriteLine(" enter Salary Par Hour:");
+            SalaryParHour = int.Parse(Console.ReadLine());
+            Console.WriteLine(" enter Sum Of Hour In Weak:");
+            SumOfHourInWeak = int.Parse(Console.ReadLine());
+            Console.WriteLine(" enter Salary :");
+            Salary = int.Parse(Console.ReadLine());
+
+
+        }
+        public double Salary_With_Bonus_Seniority() =>  Salary;
     }
 }
